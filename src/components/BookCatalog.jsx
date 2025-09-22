@@ -12,7 +12,7 @@ const BookCatalog = () => {
       try {
         setLoading(true);
         // Read the JSON file using fetch
-        const response = await fetch('../data/books.json');
+        const response = await fetch('./data/books.json');
         const data = await response.json();
         
         console.log('API Response:', JSON.stringify(data)); // helps me know how to call the api data
